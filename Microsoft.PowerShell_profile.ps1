@@ -7,3 +7,6 @@ Function gitsend([string]$commitmessage){
 	git commit -m $commitmessage
 	git push
 }
+Function Import-XML([string] $path){
+	return [xml](Get-Content $path)
+}
